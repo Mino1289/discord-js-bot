@@ -46,9 +46,13 @@ In the center of the page, you can see Privileged Gateway Intents, and 2 switche
 
 ## Step 5 : Understanding the code
 Each of the commands are in a subfolder of the commands folder, same thing for events.  
-In order to understand more easily your code, each event/command have :  
+### <u>**The Commands**</u>
+In order to understand more easily your code, each command have :  
 1. A run functions  
     It's the code to execute when the command is typed.
 2. A help object  
     It's all the infos about the commands, you can also add property, to check if the command is well typed, and can be executed or not. At the moment, there is a check for the arguments after the commands, and for permission.  
-    You can add as more as you want.
+    You can add as more as you want.  
+    
+### <u>**The Events**</u>
+For the Events, there is only the function. More-over, the name of the file must be exactly the same as the targeted event, see <a href="https://discord.js.org/#/docs/main/stable/class/Client">here</a>.
