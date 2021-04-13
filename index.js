@@ -1,4 +1,4 @@
-const { Client, Intents } = require("discord.js");
+const { Client, Intents, Collection } = require("discord.js");
 const { loadCommands, loadEvents } = require("./storage/functions")
 const { token, prefix } = require("./storage/config.json");
 
@@ -14,6 +14,8 @@ const client = new Client({
         }
     }
 });
+
+client.commands = new Collection()
 
 loadCommands(client)
 loadEvents(client)

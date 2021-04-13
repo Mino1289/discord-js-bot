@@ -2,8 +2,8 @@ const { readdirSync } = require("fs");
 const { Client } = require("discord.js")
 
 /**
- * Charge toutes les commandes
- * @param {Client} client Le client DiscordJS
+ * Load all the commands
+ * @param {Client} client The DiscordJS Client
  */
 const loadCommands = (client, dir = "./commands/") => {
     console.log("\nLoading Commands :\n")
@@ -11,17 +11,21 @@ const loadCommands = (client, dir = "./commands/") => {
         const commands = readdirSync(`${dir}/${dirs}/`).filter(files => files.endsWith(".js"));
 
         for (const file of commands) {
-            const getFileName = require(`../${dir}/${dirs}/${file}`);
+            const getFileName = require(`../${dir}/${dirs}/${file}`); 
             client.commands.set(getFileName.help.name, getFileName);
             console.log(`Command : ${getFileName.help.name}`);
+            if (getFileName.help.untracked) {
+                client.commands.delete(getFileName.help.name)
+                console.log(`Command untracked : ${getFileName.help.name}`)
+            }
         }
     });
 };
 
 
 /**
- * Charge tous les events
- * @param {Client} client Le client DiscordJS
+ * Load all the events
+ * @param {Client} client The DiscordJS Client
  */
 const loadEvents = (client, dir = "./events/") => {
     console.log("Loading Events :\n")

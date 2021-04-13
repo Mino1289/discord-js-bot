@@ -1,9 +1,10 @@
 const { Client, Message } = require("discord.js")
-const { prefix } = require("../../config.json");
+const { prefix } = require("../../storage/config.json");
 
 /**
- * @param {Client} client 
- * @param {Message} message 
+ * Fired when a message is send by a user, in a channel that the bot can see.
+ * @param {Client} client The DiscordJS Client
+ * @param {Message} message The message received
  */
 module.exports = async (client, message) => {
     const { author, content, channel, guild } = message

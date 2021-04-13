@@ -1,7 +1,7 @@
 {
   "name": "discord-js-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "A entry point for your Discord Bot with discord.js.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,8 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/Mino1289/discord-js-bot.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "discord",
+    "bot",
+    "discordjs",
+    "discord bot",
+    "discord bot template"
+  ],
+  "author": "Mino#1289",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Mino1289/discord-js-bot/issues"
