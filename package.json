@@ -1,0 +1,23 @@
+{
+  "name": "discord-js-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mino1289/discord-js-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mino1289/discord-js-bot/issues"
+  },
+  "homepage": "https://github.com/Mino1289/discord-js-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}
