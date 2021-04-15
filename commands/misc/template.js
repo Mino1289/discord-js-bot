@@ -11,9 +11,9 @@ module.exports.run = async (client, message, args) => {
 
 module.exports.help = {
     name: "template", // name of the command
-    aliases: ["help", "h","aled"], // aliases of the command
-    description: "L'aide", // description 
-    usage: "(command_name)", // usage of the command
+    aliases: ["template"], // aliases of the command
+    description: "template command", // description 
+    usage: "", // usage of the command
     permission: 0, // permission bit
     args: false, // yes or not, if args are required 
     category: "misc", // should match the subfolder name

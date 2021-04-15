@@ -49,8 +49,8 @@ module.exports.run = async (client, message, args) => {
 
 module.exports.help = {
     name: "help",
-    aliases: ["help", "h","aled"],
-    description: "L'aide",
+    aliases: ["help", "h"],
+    description: "Help command",
     usage: "(command_name)",
     permission: 0,
     args: false,
