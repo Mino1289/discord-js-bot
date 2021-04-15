@@ -1,8 +1,8 @@
-const { Client, Message } = require("discord.js")
+const DiscordJS = require("discord.js")
 
 /**
- * @param {Client} client 
- * @param {Message} message 
+ * @param {DiscordJS.Client} client 
+ * @param {DiscordJS.Message} message 
  * @param {String[]} args 
  */
 module.exports.run = async (client, message, args) => {
