@@ -1,4 +1,4 @@
-vous ne comprenez pas le français ? Choississez votre langues <a href="./docs/Language.md">ici</a>.  
+*Don't know French ? Choose your language <a href="./Language.md">here</a>.*  
 # Discord-JS Bot Template
 Dans ce répertoire, vous allez trouver un template, une base pour faire un bot discord en utilisant la librairie <a href="https://discord.js.org/">discord.js</a>.  
 Vous allez avoir besoin de NodeJS installé sur votre ordinateur.  
@@ -58,4 +58,8 @@ Pour comprendre plus facilement le code, chaque commande contient :
     Il contient toutes les informations à propos de la commandes (nom, alias, description, usage, category), mais aussi des tests pour vérifier que la commande est exécutable (permission, args, untracked)  
 
 ### <u>**Les Events**</u>
-Pour les events, il y a uniquement la fonction qui n'a pas de nom. Par ailleur, le nom du fichier de l'event doit être exactement le même que celui de l'event que vous souhaité recevoir, voir <a href="https://discord.js.org/#/docs/main/stable/class/Client">ici</a>.
+Pour les events, il y a uniquement la fonction qui n'a pas de nom. Par ailleur, le nom du fichier de l'event doit être exactement le même que celui de l'event que vous souhaité recevoir
+1. Dossier process  
+    Dans ce dossier, ne mettre que les events natifs de discord.js (<a href="https://discord.js.org/#/docs/main/stable/class/Client">ici</a>).
+2. Dossier event  
+    Dans ce dossier, vous pouvez mettre les events que vous avez fais vous même, par exemple, l'event command, n'est pas natif de discord.js, et est lancé quand une command est executé.

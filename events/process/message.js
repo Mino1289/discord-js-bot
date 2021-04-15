@@ -36,4 +36,5 @@ module.exports = async (client, message) => {
     }
 
     command.run(client, message, args);
+    client.emit("command", (client, message, commandName))
 }
