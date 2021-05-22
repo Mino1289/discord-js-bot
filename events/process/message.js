@@ -35,6 +35,6 @@ module.exports = async (client, message) => {
         return message.channel.send(`Vous n'avez pas la permissions d'effectuer cette commande.`).then(m => m.delete({ timeout: 5000 }));
     }
 
+    client.emit("command", client, message, commandName)
     command.run(client, message, args);
-    client.emit("command", (client, message, commandName))
 }
