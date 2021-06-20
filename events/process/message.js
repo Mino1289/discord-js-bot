@@ -9,10 +9,6 @@ const { prefix } = require("../../storage/config.json");
 module.exports = async (client, message) => {
     const { author, content, channel, guild } = message
 
-    if (channel.id == "826924112735109231") {
-        await message.react("✅")
-        await message.react("❌")
-    }
     if (!content.startsWith(prefix) || author.bot || !guild) return;
 
     const args = content.slice(prefix.length).trim().split(/ +/g);
