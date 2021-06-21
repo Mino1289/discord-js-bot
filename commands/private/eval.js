@@ -1,4 +1,5 @@
 const DiscordJS = require("discord.js")
+const { prefix } = require("../../storage/config.json")
 
 /**
  * @param {DiscordJS.Client} client 
@@ -19,7 +20,7 @@ module.exports.run = async (client, message, args) => {
         }
 
         try {
-            const code = content.replace("?eval", "");
+            const code = content.replace(`${prefix}eval`, "");
             let evaled = eval(code);
 
             if (typeof evaled !== "string")
